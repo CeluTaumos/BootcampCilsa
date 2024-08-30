@@ -1,0 +1,42 @@
+.dark-mode-icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.BootCamp{
+    color: #ffffff;
+}
+.dark-mode-icon i {
+    color: #ffffff;
+}
+.dark-mode-icon:hover i {
+    color: rgb(206, 82, 240);
+    transform: scale(1.1); 
+}
+* {
+    color: #f0f0f0;
+}
+
+body {
+
+    background-color: #000000;
+}
+
+header {
+    background-color: #444;
+}
+
+form {
+    border-color: #888;
+    background-color: #555;
+}
+
+.alinear input {
+    background-color: #000000d7;
+    color: #f0f0f0;
+}
+
+.botonEnviar {
+    background-color: #007acc;
+    color: #f0f0f0;
+}
+
