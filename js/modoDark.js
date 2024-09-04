@@ -3,17 +3,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const darkModeLink = document.getElementById('dark-mode');
     const form = document.getElementById('formulario');
     const mensajeSpan = document.querySelector('.mensaje'); 
+    const darkModeSwitch = document.getElementById('dark-mode-switch');
 
+    //modo oscuro
+    function toggleDarkMode() {
+        darkModeLink.disabled = !darkModeLink.disabled;
+        darkModeSwitch.classList.toggle('dark-mode-active');
+        document.body.classList.toggle('dark-mode');
+    }
 
-    darkModeIcon.addEventListener('click', function () {
-        if (darkModeLink.disabled) {
-            darkModeLink.disabled = false;
-        } else {
-            darkModeLink.disabled = true;
-        }
-    });
+   
+    darkModeIcon.addEventListener('click', toggleDarkMode);
+    darkModeSwitch.addEventListener('click', toggleDarkMode);
 
-    // Validación de email -- PRACTICA JS
+    // Validación de email
     form.addEventListener('submit', function (event) {
         const emailInput = document.getElementById('email');
         const emailValue = emailInput.value;
@@ -23,10 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
             mensajeSpan.textContent = 'Por favor, ingresa un email válido.';
             mensajeSpan.style.color = 'red'; 
-          
         } else {
             mensajeSpan.textContent = ''; 
-           
         }
     });
 });

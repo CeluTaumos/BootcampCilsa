@@ -5,22 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BootCamp Full Stack</title>
-    <link rel="stylesheet" href="formEstilos.css">
-    <link rel="stylesheet" href="formEstilosDark.css" id="dark-mode">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/formEstilos.css">
+    <link rel="stylesheet" href="../styles/formEstilosDark.css" id="dark-mode">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&family=M+PLUS+Code+Latin:wght@100..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+   
 </head>
 
 <body>
     <header>
-        <p>Clase 01</p>
-        <p class="BootCamp">Bootcamp Full Stack <span class="dark-mode-icon"><i class="fas fa-moon"></i></span></p>
+        <p><a href="../index.html" class="home">Inicio</a></p>
+        <p class="BootCamp">Bootcamp Full Stack</p>
     </header>
     <main>
+        <section class="contendero">
+        <div class="switch-container" id="dark-mode-switch">
+            <div class="switch-background"></div>
+            <div class="switch-button">
+                <i class="fas fa-moon dark-mode-icon"></i>
+            </div>
+        </div>
+    </section>
         <h1>Formulario de Prueba</h1>
         <p>Homework made by Celena Moscovich</p>
         <form id="formulario" action="#" method="post">
@@ -56,7 +64,7 @@
         <img src="https://moodle.cilsa.org/pluginfile.php/1/core_admin/logo/0x200/1703228538/logo_cilsa_ong-fondo-celeste.jpg"
             alt="logo">
     </footer>
-    <script src="modoDark.js"></script>
+    <script src="../js/modoDark.js"></script>
 </body>
 
 </html>
