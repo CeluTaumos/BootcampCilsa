@@ -1,106 +1,15 @@
-
-/* COLORES 
-
-VIOLETA: #3A1078
-VIOLETA 2: #4E31AA
-CELESTE:# #4E31AA
-BLANQUISH: #F7F7F8*/
-
-
 .BootCamp {
     color: rgb(0 163 230);
 }
 
-
-
-
-form {
-    padding: 2%;
-    display: flex;
-    border: #4E31AA solid 0.5em; 
-    border-radius: 0.8em;
-    margin: 2%;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    background-color: #F7F7F8; 
-}
-
-.alinearIzq {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.alinear {
-    display: flex;
-    justify-content: space-between;
-    margin: 1% 0;
-    align-items: center;
-    width: 100%;
-}
-
-.alinear label {
-    width: 30%;
-    color: #3A1078; 
-}
-
-.alinear input {
-    width: 65%;
-    background-color: #F7F7F8; 
-    border: 2px solid #4E31AA; 
-    border-radius: 0.5em;
-    padding: 0.5em;
-    color: #3A1078; 
-}
-
-h2 {
-    text-align: center;
-    margin: 1%;
-    color: #3A1078; 
-}
-
-.botonEnviar {
-    width: 20%;
-    margin: 2%;
-    text-transform: uppercase;
-    color: #F7F7F8; 
-    font-weight: 700;
-    background-color: #4E31AA; 
-    border-radius: 0.8em;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.botonEnviar:hover {
-    background-color: #3795BD; 
-}
-
-.home {
-    text-decoration: none;
-    color: #b38af1; 
-}
-
-.contendero {
-    width: 100%;
-    margin: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-/* Botón Dark Mode */
 .switch-container {
-    margin: 1%;
     position: relative;
     width: 3.75em;
     height: 1.875em;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .switch-background {
@@ -120,7 +29,6 @@ h2 {
     background-color: #fff;
     border-radius: 50%;
     transition: left 0.3s;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,76 +47,44 @@ h2 {
     background-color: #af96ff;
 }
 
-
-@media (max-width: 768px) {
-    form {
-        width: 80%;
-    }
-
-    .alinear label {
-        width: 40%;
-    }
-
-    .alinear input {
-        width: 55%;
-    }
-
-    .botonEnviar {
-        width: 60%;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Estilos para modo oscuro */
+body.dark-mode {
+    background-color: #000000 !important; /* Fondo negro */
+    color: #ffffff !important; /* Texto blanco */
 }
 
-@media (max-width: 480px) {
-    form {
-        width: 95%;
-    }
-
-    .alinear label {
-        width: 45%;
-    }
-
-    .alinear input {
-        width: 50%;
-    }
-
-    .botonEnviar {
-        width: 80%;
-    }
+header.dark-mode {
+    background-color: #121212 !important; /* Fondo oscuro para el header */
+    color: #ffffff !important; /* Texto blanco */
 }
 
-@media (max-width: 320px) {
-    header {
-        padding: 0.5em;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    form {
-        width: 100%;
-        padding: 1%;
-    }
-
-    .alinear label {
-        width: 50%;
-        font-size: 0.9em;
-    }
-
-    .alinear input {
-        width: 48%;
-        font-size: 0.9em;
-    }
-
-    h1, h2 {
-        font-size: 1.5em;
-    }
-
-    .botonEnviar {
-        width: 90%;
-        font-size: 0.9em;
-    }
+form.dark-mode {
+    border-color: #ffffff !important; /* Borde blanco */
+    background-color: #1e1e1e !important; /* Fondo más oscuro para el formulario */
+    color: #ffffff !important;
 }
+
+h2.dark-mode {
+    color: #ffffff !important; /* Título en blanco */
+}
+
+label.dark-mode,
+input.dark-mode {
+    color: #ffffff !important; /* Texto blanco */
+    background-color: #333333 !important; /* Fondo gris oscuro */
+    border: 2px solid #ffffff !important; /* Bordes blancos */
+}
+
+button.dark-mode {
+    background-color: #ffffff !important; /* Fondo del botón en blanco */
+    color: #000000 !important; /* Texto del botón en negro */
+    border: 2px solid #ffffff !important;
+}
+
+.mensaje.dark-mode {
+    color: #ffcc00 !important; /* Texto amarillo para mensajes de advertencia */
+}
+
+
+
+
